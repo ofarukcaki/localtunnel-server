@@ -4,6 +4,7 @@
   "description": "expose localhost to the world",
   "version": "0.0.8",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git://github.com/localtunnel/server.git"
@@ -29,6 +30,6 @@
   "scripts": {
     "test": "mocha --check-leaks --require esm './**/*.test.js'",
     "start": "./bin/server",
-    "dev": "node-dev bin/server --port 3000"
+    "dev": "node bin/server --port 3000"
   }
 }
